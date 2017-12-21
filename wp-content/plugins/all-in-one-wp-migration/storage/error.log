@@ -1,0 +1,9 @@
+Dec 20 2017 23:54:42
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\xb3soldg2v25\\filemap.list): Resource temporarily unavailable","File":"C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Dec 20 2017 23:54:42
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\xb3soldg2v25\\localhost-20171220-235433-346.wpress): Resource temporarily unavailable","File":"C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Dec 20 2017 23:54:42
+{"Number":2,"Message":"rmdir(C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\xb3soldg2v25): Directory not empty","File":"C:\\xampp\\htdocs\\caterser\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+

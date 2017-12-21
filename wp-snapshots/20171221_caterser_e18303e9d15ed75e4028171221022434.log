@@ -1,0 +1,80 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 21 December, 2017 2:24 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.30
+WORDPRESS:	4.9.1
+PHP INFO:	7.1.9 | SAPI: apache2handler
+SERVER:		Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 6MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: Ran from C:/xampp/mysql/bin/mysqldump.exe 
+TABLES: total:29 | filtered:0 | create:29 
+SQL CREATED: 20171221_caterser_e18303e9d15ed75e4028171221022434_database.sql 
+SQL FILE SIZE: 251.33KB (257360) 
+SQL FILE TIME: 2017-12-21 02:24:48 
+SQL RUNTIME: 1.98 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/caterser 
+ARCHIVE FILE: 20171221_caterser_e18303e9d15ed75e4028171221022434_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	65.01MB 
+STATS:	Dirs 535 | Files 3,944 
+SQL ADDED: 20171221_caterser_e18303e9d15ed75e4028171221022434_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4479
+    [filename] => C:\xampp\htdocs\caterser\wp-snapshots\tmp\20171221_caterser_e18303e9d15ed75e4028171221022434_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 23.89MB 
+ARCHIVE RUNTIME: 38.20 sec. 
+MEMORY STACK: 6MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [C:/xampp/htdocs/caterser/wp-snapshots/tmp/20171221_caterser_e18303e9d15ed75e4028171221022434_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 251.33KB 
+Installer File: 443.34KB 
+Archive File: 23.89MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 49.06 sec.
+PEAK PHP MEMORY USED: 8MB
+DONE PROCESSING => 20171221_caterser 21 December, 2017 2:25 am
+ 

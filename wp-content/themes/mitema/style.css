@@ -1,0 +1,129 @@
+/*
+Theme Name: mitema
+Author: Ezequiel Crosa
+*/
+/* 
+-----------------------------------------------------------------------------------------
+------------------------------------- CSS Inicial ---------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+html{
+position:relative;
+min-width:900px;
+}
+body{
+margin:0px;
+}
+a{
+text-decoration:none;
+}
+.header{
+}
+.footer{
+}
+.central{
+height:100%;
+}
+
+/* 
+-----------------------------------------------------------------------------------------
+----------------------------------- CSS Para Adaptable ----------------------------------
+-----------------------------------------------------------------------------------------
+/
+
+@media only screen and (min-width: 1199px){
+
+}
+@media only screen and (max-width: 993px) {
+    
+}
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+
+}
+
+*/
+
+/* 
+-----------------------------------------------------------------------------------------
+------------------------------------- CSS Menú Genérico ---------------------------------
+-----------------------------------------------------------------------------------------
+*/
+.menu{
+	margin-left:50%;
+	float:left;
+	display:none;
+}
+.menu a{
+	color: white;
+}
+.menu ul{
+	position:absolute;
+	list-style:none;
+	padding:0px; 	
+}
+.menu li {
+	float:left;
+	height:25px;
+	padding:10px;
+}
+/* Para Submenú Con Animación Hacia Abajo: agregar asterisco aquí->/
+.menu li li{
+	height:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	overflow:hidden;
+	transition: height 1s, padding-top 1s, padding-bottom 1s;
+}
+.menu li li li{
+	height:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	overflow:hidden;
+	transition: height 1s, padding-top 1s, padding-bottom 1s;
+}
+.menu li:hover > ul{
+	display: block;
+}
+.menu li:hover li{
+	height: 25px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.menu li:hover li{
+	height:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/* Fin Animación Hacia Abajo */
+
+/* Para Submenú Con Animación Hacia Derecha: agregar asterisco aquí->/
+.menu li ul{
+	width:0px;
+	padding-right:0px;
+	padding-left:0px;
+	overflow:hidden;
+	transition: width 1s, padding-left 1s, padding-right 1s;
+}
+.menu li:hover ul{
+	float:left;
+	width:80px;
+	padding-left:10px;
+	padding-right:10px;
+}
+/* Fin Animación Hacia Derecha */
+
+/* 
+-----------------------------------------------------------------------------------------
+------------------------------------- CSS Otro ------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+

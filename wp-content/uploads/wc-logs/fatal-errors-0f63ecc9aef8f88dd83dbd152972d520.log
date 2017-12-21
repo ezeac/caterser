@@ -1,0 +1,24 @@
+2017-12-07T14:10:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 0 passed in C:\xampp\htdocs\caterser\wp-content\themes\caterser\functions.php on line 35 and at least 3 expected in C:\xampp\htdocs\caterser\wp-includes\l10n.php:362
+Stack trace:
+#0 C:\xampp\htdocs\caterser\wp-content\themes\caterser\functions.php(35): _n()
+#1 C:\xampp\htdocs\caterser\wp-content\themes\caterser\header.php(65): storefront_cart_link()
+#2 C:\xampp\htdocs\caterser\wp-includes\template.php(688): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\caterser\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#4 C:\xampp\htdocs\caterser\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\xampp\htdocs\caterser\wp-content\themes\caterser\index.php(3): get_header()
+#6 C:\xampp\htdocs\caterser\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\caterser\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\caterser\index.php(17): re
+
+2017-12-07T14:41:16+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_cart_link3() in C:\xampp\htdocs\caterser\wp-content\themes\caterser\header.php:65
+Stack trace:
+#0 C:\xampp\htdocs\caterser\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\caterser\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\caterser\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\caterser\wp-content\themes\caterser\index.php(3): get_header()
+#4 C:\xampp\htdocs\caterser\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\caterser\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\caterser\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
