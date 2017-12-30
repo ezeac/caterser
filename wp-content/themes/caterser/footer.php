@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div class="cont2Footer col-xs-12 row">
-				<div class="col-xs-8">
+				<div class="col-xs-8 hidden-xs">
 					<div class="item1Footer">
 						<div class="imagenitem1Footer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/imagenes/svg/tel.svg" alt=""></div>
 						<div class="texto3 light t12">0351-4731685</div>
@@ -40,7 +40,7 @@
 						<div class="texto3 light t12">cater-serv-cba@hotmail.com</div>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-12">
 					<div class="firmaFooterCont">
 						<div class="item2Footer regular t14">Desarrollado por <a href="http://www.diezweb.com.ar/"><b>DiezWeb</b></a></div>
 						<div class="item2Footer regular t14">Todos los derechos reservados</div>

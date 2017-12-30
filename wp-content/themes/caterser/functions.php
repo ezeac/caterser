@@ -46,6 +46,9 @@ function storefront_product_search() {
 function storefront_primary_navigation() {
 	?>
 	<nav id="site-navigation" class="menuPrincipal main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
+		<div class="itemHeader site-search">
+			<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+		</div>
 		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">
 			<span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( 'Menu', 'storefront' ) ) ); ?></span>
 		</button>

@@ -46,8 +46,45 @@
 		<div class="imagenLogo">
 			<img style="width: 100%" src="<?php echo get_stylesheet_directory_uri(); ?>/imagenes/logo.png" alt="">
 		</div>
-		<div class="itemHeader site-search">
-			<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+		<div class="loginHome">
+			<div class="contLogin">
+				<div class="tituloLogin regular t16">Iniciar Sesión</div>
+				<?php
+				$args = array(
+					'echo'           => true,
+					'remember'       => false,
+					'redirect'       => ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+					'form_id'        => 'loginform',
+					'id_username'    => 'user_login',
+					'id_password'    => 'user_pass',
+					'id_remember'    => 'rememberme',
+					'id_submit'      => 'wp-submit',
+					'class_submit'      => 'inputRojo',
+					'label_username' => __( '' ),
+					'placeholder_username' => __( 'Usuario' ),
+					'label_password' => __( '' ),
+					'label_remember' => __( '' ),
+					'label_log_in'   => __( 'Ingresar' ),
+					'value_username' => '',
+					'value_remember' => false
+				);
+				wp_login_form( $args );
+				// echo "<pre>";
+				// print_r(wp_get_current_user());
+				// echo "</pre>";
+				?>
+				<script>
+					$(document).ready(function(){
+						$(".login-username input,.login-password input").addClass("regular");
+						$(".login-username input,.login-password input").addClass("t11");
+						$(".login-username input").attr("placeholder", "Nombre de usuario");
+						$(".login-password input").attr("placeholder", "Contraseña");
+					})
+				</script>
+				<div class="lostPass">
+					<a href="./my-account/lost-password/">Olvidé mi contraseña</a>
+				</div>
+			</div>
 		</div>
 		<?php
 		if ( storefront_is_woocommerce_activated() ) {
