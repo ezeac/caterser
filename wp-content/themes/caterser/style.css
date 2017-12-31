@@ -152,7 +152,7 @@ a.cart-contents {
     padding: 10px 0px;
     font-size: 35px;
     float: right;
-    margin-right: 20px;
+    margin-right: 10%;
     color: black;
     width: 40px;
 }
@@ -883,6 +883,8 @@ nav#site-navigation {}
 
 header > .col-full {
     float: left;
+    margin-top: 2;
+    clear: both;
 }
 
 .main-navigation ul.nav-menu>li:first-child {
