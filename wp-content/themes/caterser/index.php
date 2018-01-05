@@ -23,6 +23,10 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
+					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/Slider0.jpg')"></div>
+				</div>
+
+				<div class="item active">
 					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/Slider1.jpg')"></div>
 				</div>
 
