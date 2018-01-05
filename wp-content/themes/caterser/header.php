@@ -72,6 +72,13 @@
 				// echo "<pre>";
 				// print_r(wp_get_current_user());
 				// echo "</pre>";
+				if ($nombre = wp_get_current_user()->data->user_nicename){
+					echo "<style>
+						.loginHome {
+							display: none;
+						}
+					</style>";
+				}
 				?>
 				<script>
 					$(document).ready(function(){
@@ -95,7 +102,21 @@
 			}
 		?>
 		<div class="itemRight botonRojo">
-			<a href="/my-account">MI CUENTA</a>
+			<?php if ($nombre = wp_get_current_user()->data->user_nicename){ ?>
+				<a href="/my-account">MI&nbsp;CUENTA:&nbsp;<?php echo strtoupper($nombre) ?></a>
+				<style>
+					.itemRight a {
+						color: black !important;
+						font-size: 12px;
+					}
+					.itemRight.botonRojo {
+						background: none;
+						width: auto !important;
+					}
+				</style>
+			<?php } else { ?>
+				<a href="/my-account">MI CUENTA</a>
+			<?php } ?>
 		</div>
 		<ul id="site-header-cart" class="itemRight site-header-cart menu">
 			<li class="<?php echo esc_attr( $class ); ?>">
@@ -127,6 +148,14 @@
 			do_action( 'storefront_header' ); ?>
 		</div>
 	</header><!-- #masthead -->
+
+	<script>
+		$(document).ready(function(){
+			$(".storefront-handheld-footer-bar ul.columns-3 li.search").click(function(){
+				$(".site-search").fadeToggle();
+			})
+		})
+	</script>
 
 	<?php
 	/**

@@ -195,7 +195,7 @@ ul#site-header-cart {
 
 .itemRight.botonRojo {
     margin-top: 10px;
-    width: 100px;
+    width: auto;
     text-align: center;
     margin-right: 5%;
 }
@@ -367,15 +367,20 @@ section#home2 {
 /*form input[type='submit'] {background: #E10F3C !important;color: white !important;font-family: Poppins-SemiBold;font-size: 10px;text-transform: uppercase;border-radius: 5px;padding: 19px 33px;letter-spacing: 0.5px;}
 */
 .lostPass {
-    margin-top: 0px;
+    margin-top: 5px;
     font-size: 11px;
     text-align: right;
     width: 100%;
     float: left;
 }
 
+.lostPass:hover {
+    color: #e10f3c;
+}
+
 .loginHome input#wp-submit {
     float: right;
+    border-radius: 5px;
 }
 
 .lostPass a {
@@ -484,6 +489,7 @@ input#woocommerce-product-search-field-0 {
     border-radius: 0px;
     padding-left: 40px;
     box-shadow: none !important;
+    color: white;
 }
 
 #productosDestacados .product h2 {
@@ -862,7 +868,7 @@ div#modal {
     border: 2px solid white;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     nav.woocommerce-breadcrumb {
     float: left;
     width: 100%;
@@ -942,7 +948,16 @@ ul.products li.product {
     height: 350px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
+.site-search {
+    width: 100vw;
+    position: fixed;
+    bottom: 58px;
+    left: 0px;
+    z-index: 99;
+    height: 40px;
+}
+
 .loginHome {
     width: 80%;
     position: relative;
@@ -1226,3 +1241,7 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .mediaVideosCont .tituloProveedores {
     padding-left: 0px;
 }
+
+
+
+.storefront-handheld-footer-bar ul.columns-3 li.search {}

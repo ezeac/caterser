@@ -1,8 +1,0 @@
-<?php
-if(isMobile()){
-echo 'unCódigo';
-}
-else {
-echo 'otroCódigo';
-}
-?>

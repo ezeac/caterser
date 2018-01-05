@@ -22,3 +22,15 @@ Stack trace:
 #7 {main}
   thrown
 
+2018-01-04T22:50:06+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in C:\xampp\htdocs\caterser\wp-content\themes\caterser\header.php:75
+Stack trace:
+#0 C:\xampp\htdocs\caterser\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\caterser\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\caterser\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\caterser\wp-content\themes\caterser\page.php(3): get_header()
+#4 C:\xampp\htdocs\caterser\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\caterser\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\caterser\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
