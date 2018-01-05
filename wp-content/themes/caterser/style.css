@@ -440,7 +440,7 @@ section#home2 {
 
 footer {
     background: #282828 !important;
-    padding: 40px 0px !important;
+    padding: 40px 5% !important;
     margin-top: 100px;
 }
 
@@ -598,7 +598,6 @@ nav#site-navigation {
 .tituloProveedores {
     margin-top: 50px;
     margin-bottom: 30px;
-    padding-left: 0px;
 }
 
 .titulo1InfoQuienesSomos {
@@ -833,11 +832,12 @@ select.orderby {
 }
 
 .inputSend input {
-    padding: 20px 50px;
+    padding: 15px 30px;
     border-radius: 10px;
     margin-top: 30px;
     margin-left: 50%;
     transform: translate(-50%,0);
+    font-size: 13;
 }
 
 ul.products li.product img {
@@ -1213,4 +1213,16 @@ nav.woocommerce-MyAccount-navigation {
     display: flex;
     width: 100%;
     flex-direction: column;
+}
+
+#wpadminbar {
+    display: none;
+}
+
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {
+    display: none;
+}
+
+.mediaVideosCont .tituloProveedores {
+    padding-left: 0px;
 }

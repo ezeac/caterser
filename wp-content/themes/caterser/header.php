@@ -44,7 +44,7 @@
 
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="imagenLogo">
-			<img style="width: 100%" src="<?php echo get_stylesheet_directory_uri(); ?>/imagenes/logo.png" alt="">
+			<a href="/"><img style="width: 100%" src="<?php echo get_stylesheet_directory_uri(); ?>/imagenes/logo.png" alt=""></a>
 		</div>
 		<div class="loginHome">
 			<div class="contLogin">
