@@ -23,15 +23,15 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/slider1.jpg')"></div>
+					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/Slider1.jpg')"></div>
 				</div>
 
 				<div class="item">
-					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/slider1.jpg')"></div>
+					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/Slider2.jpg')"></div>
 				</div>
 
 				<div class="item">
-					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/slider1.jpg')"></div>
+					<div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/imagenes/home/slider/Slider3.jpg')"></div>
 				</div>
 			</div>
 
