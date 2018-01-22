@@ -64,7 +64,7 @@
 					'placeholder_username' => __( 'Usuario' ),
 					'label_password' => __( '' ),
 					'label_remember' => __( '' ),
-					'label_log_in'   => __( 'Ingresar' ),
+					'label_log_in'   => __( 'Iniciar Sesión' ),
 					'value_username' => '',
 					'value_remember' => false
 				);
@@ -85,7 +85,9 @@
 						$(".login-username input,.login-password input").addClass("regular");
 						$(".login-username input,.login-password input").addClass("t11");
 						$(".login-username input").attr("placeholder", "Nombre de usuario");
+						$(".login-username input").attr("required", "");
 						$(".login-password input").attr("placeholder", "Contraseña");
+						$(".login-password input").attr("required", "");
 					})
 				</script>
 				<div class="lostPass">
@@ -101,23 +103,6 @@
 				$class = '';
 			}
 		?>
-		<div class="itemRight botonRojo">
-			<?php if ($nombre = wp_get_current_user()->data->user_nicename){ ?>
-				<a href="/my-account">MI&nbsp;CUENTA:&nbsp;<?php echo strtoupper($nombre) ?></a>
-				<style>
-					.itemRight a {
-						color: black !important;
-						font-size: 12px;
-					}
-					.itemRight.botonRojo {
-						background: none;
-						width: auto !important;
-					}
-				</style>
-			<?php } else { ?>
-				<a href="/my-account">MI CUENTA</a>
-			<?php } ?>
-		</div>
 		<ul id="site-header-cart" class="itemRight site-header-cart menu">
 			<li class="<?php echo esc_attr( $class ); ?>">
 				<?php storefront_cart_link2(); ?>
@@ -126,6 +111,36 @@
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
 			</li>
 		</ul>
+		<div class="itemRight botonRojo">
+			<?php if ($nombre = wp_get_current_user()->data->user_nicename){ ?>
+				<a onclick="abrirMenuDesplegable1()" href="javascript:0"><?php echo strtoupper($nombre) ?><i class="material-icons">keyboard_arrow_down</i></a>
+				<style>
+					.itemRight a {
+						color: grey !important;
+						font-size: 12px;
+					}
+					.itemRight.botonRojo {
+						background: none;
+						width: auto !important;
+					}
+				</style>
+				<div class="menuDesplegable">
+					<div class="item-menu-desplegable"><a href="/my-account">Mi cuenta</a></div>
+					<div class="item-menu-desplegable"><a href="/my-account/customer-logout/">Salir</a></div>
+				</div>
+			<?php } else { ?>
+				<style>
+					.itemRight.botonRojo {
+						display: none;
+					}
+				</style>
+			<?php } ?>
+		</div>
+		<script>
+			function abrirMenuDesplegable1() {
+				$(".menuDesplegable").toggleClass("abrir-menu-desplegable");
+			}
+		</script>
 		<?php
 		} 
 		?>

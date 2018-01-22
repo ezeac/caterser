@@ -34,7 +34,10 @@ function storefront_cart_link2() {
 			<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
 			<span class="count"><?php echo wp_kses_data( sprintf( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) );?></span>
 		</a>
-		<span class="itemHeaderOk"><img src="<?php echo get_stylesheet_directory_uri() ?>/imagenes/svg/cart.svg" alt=""></span>
+		<span class="itemHeaderOk">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/imagenes/svg/cart.svg" alt="">
+			<div class="count-items-header-cart"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() );?></div>
+		</span>
 
 	<?php
 }
@@ -151,6 +154,23 @@ function generar_imagenes_carpeta($ruta){
       echo "<br>No es ruta valida"; 
 }
 
+
+//add content before title of product list
+function storefront_before_content() {
+	?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		<div class="text-distribución-title regular t35" style="line-height: 35px;">Lugares y días de distribución</div><br>
+		<div class="bordeSeparador"></div>
+		<div class="bordeSeparador"></div>
+		<div class="bordeSeparador"></div><br>
+		<div class="text-distribución-text regular t16">
+			<b>De lunes a sábado: </b>Córdoba Capital<br>
+			<b>Jueves: </b>Córdoba Capital, Villa Carlos Paz, Villa Allende, Salsipuedes, Rio Ceballos<br>
+			<b>Viernes: </b>Córdoba Capital, Alta Gracia, Santa Rosa de Calamuchita, Villa General Belgrano
+		</div><br><br>
+	<?php
+}
 
 //función para buscar en la base de datos y cargarlos para la página
 //código en comenario para ejecutar esta función

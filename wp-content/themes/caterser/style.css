@@ -66,7 +66,7 @@ src: url(./tipografias/Poppins/Poppins-SemiBold.ttf);
 }
 
 .bRed {
-    background: #E2103D !important;
+    background: #E10F3C !important;
     color: white !important;
 }
 
@@ -152,12 +152,26 @@ a.cart-contents {
 }
 
 .itemHeaderOk {
-    padding: 10px 0px;
+    padding: 13px 0px;
     font-size: 35px;
     float: right;
     margin-right: 10%;
     color: black;
     width: 40px;
+    position: relative;
+}
+
+.itemHeaderOk:before {
+    content: "\f291";
+    font: normal normal normal 27px/1 FontAwesome;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.itemHeaderOk img {
+    display: none;
 }
 
 .itemHeader.site-search {
@@ -182,7 +196,7 @@ input#woocommerce-product-search-field-0 {
 
 ul#site-header-cart {
     padding-right: 3%;
-    width: 160px;
+    min-width: 160px;
     z-index: 9;
     margin-top: 8px;
 }
@@ -194,10 +208,10 @@ ul#site-header-cart {
 }
 
 .itemRight.botonRojo {
-    margin-top: 10px;
-    width: auto;
+    margin-top: 5px;
     text-align: center;
-    margin-right: 5%;
+    margin-right: 2%;
+    position: relative;
 }
 
 .botonRojo {
@@ -246,6 +260,10 @@ header {
     padding-right: 5%;
     border: none !important;
     text-align: center;
+}
+
+.woocommerce-Addresses header {
+    padding-left: 0px;
 }
 
 a.skip-link,.col-full:before {
@@ -319,6 +337,11 @@ section#home2 {
     font-family: Poppins-Regular;
     height: 41px;
     margin-left: -1px;
+    color: black;
+}
+
+.loginHome p.login-username input::placeholder, .loginHome p.login-password input::placeholder {
+    color: lightgrey;
 }
 
 .loginHome p.login-username input::before {
@@ -381,6 +404,11 @@ section#home2 {
 .loginHome input#wp-submit {
     float: right;
     border-radius: 5px;
+    color: white;
+    background: #E10F3C;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 20px;
 }
 
 .lostPass a {
@@ -414,6 +442,11 @@ section#home2 {
     padding-right: 20px;
 }
 
+.titulo2Footer a:hover {
+    transition: all .3s;
+    color: #989898 !important;
+}
+
 .titulo2Footer:last-child {
     padding-right: 0px;
 }
@@ -440,7 +473,7 @@ section#home2 {
     position: absolute;
     bottom: 0px;
     text-align: right;
-    right: 0px;
+    right: -15px;
 }
 
 footer {
@@ -467,6 +500,7 @@ footer * {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
+    padding-top: 20px;
 }
 
 #productosDestacados .onsale, #productosDestacados .price, #productosDestacados .add_to_cart_button, #productosDestacados .ajax_add_to_cart {
@@ -747,6 +781,11 @@ a.button.product_type_simple {
 span.price {
     font-family: Poppins-SemiBold;
     font-size: 17px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 
 span.price span {
@@ -928,24 +967,27 @@ a.button.product_type_simple.add_to_cart_button {
 
 a.button.product_type_simple.add_to_cart_button:before {
     content: 'add' !important;
-    width: 30px;
-    height: 30px;
-    background: red;
+    width: 35px;
+    height: 35px;
+    background: #E10F3C;
     position: absolute;
     top: 0px;
     left: 50%;
     margin-left: -15px;
     color: white;
     text-align: center;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 35px;
     border-radius: 1000px;
     font-family: 'Material Icons' !important;
 }
 
 ul.products li.product {
     margin-bottom: 0px;
-    height: 350px;
+    height: 300px;
+    margin-bottom: 50px;
+    border: 2px solid #DCE1E6;
+    border-radius: 10px;
 }
 
 @media (max-width: 767px){
@@ -1245,3 +1287,130 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 
 .storefront-handheld-footer-bar ul.columns-3 li.search {}
+
+.site-header-cart .cart-contents {
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.itemRight a > i {.itemRight
+    a > i {      position: absolute;
+    color: grey;
+    transform: translate(20%, 10%);
+    font-size: 18px;  }
+    position: absolute;
+    color: grey;
+    transform: translate(20%, 25%);
+    font-size: 18px;
+}
+
+.menuDesplegable {
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 5px 20px 0px #0000004f;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    z-index: 9999999;
+    right: 0px;
+    background: white;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0px;
+    transition: all .5s;
+    height: 0px;
+}
+
+.abrir-menu-desplegable {
+    height: 80px;
+}
+
+.menuDesplegable > div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+html[lang="es-ES"] {
+    margin-top: 0px !important;
+}
+
+.woocommerce-MyAccount-navigation ul li a:before {
+    float: left;
+    margin-left: 0px;
+    margin-right: 1%;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+    transition: all .3s;
+}
+
+.woocommerce-MyAccount-navigation ul li a:hover {
+    color: #E10F3C !important;
+}
+
+.site-header-cart .widget_shopping_cart {
+    width: 250px;
+    right: 15px;
+    background: white;
+    box-shadow: 0px 3px 5px #00000054;
+    border-radius: 10px;
+}
+
+.price del span {
+}
+
+.site-header-cart:hover .widget_shopping_cart {
+    left: auto;
+}
+
+.site-header .widget_shopping_cart li a.remove {margin-top: 10px;}
+
+.site-header-cart .widget_shopping_cart a, .site-header-cart .widget_shopping_cart span.quantity {
+    text-align: left;
+    display: list-item;
+}
+
+.site-header-cart .widget_shopping_cart .product_list_widget img {
+    margin-top: 5px;
+}
+
+.widget a.button.checkout,.widget a.button.checkout:hover {
+    background: #E10F3C;
+    color: white !important;
+}
+
+.count-items-header-cart {
+    color: white;
+    background: #E10F3C;
+    position: absolute;
+    font-size: 14px;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-5%);
+    border-radius: 100px;
+    width: 23px;
+    height: 23px;
+    line-height: 21px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#site-header-cart li.current-menu-item {
+}
+
+.cont-header-cart {
+    float: left;
+}
+
+.storefront-handheld-footer-bar ul li.cart .count {
+    background: #E10F3C;
+}
+
+.woocommerce-EditAccountForm input.woocommerce-Button.button {
+    background: rgb(225, 15, 60);
+    color: white;
+}
+
+.woocommerce-account .loginHome {
+    display: none;
+}
