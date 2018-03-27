@@ -308,7 +308,7 @@ section#home1 {
 }
 
 .sliderHome .item > div {
-    height: 400px;
+    height: 500px;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -424,11 +424,11 @@ section#home2 {
     box-sizing: border-box;
     margin: 0px 5px;
     height: 250px;
-    width: 250px;
+    width: calc(25% - 10px);
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #productosDestacados .woocommerce .product {
         width: calc(50% - 10px);
     }

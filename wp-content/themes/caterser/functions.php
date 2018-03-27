@@ -191,14 +191,14 @@ function mostrarDatos ($resultados) {
 
 
 
-function wpse_131562_redirect() {
+function function_redirect() {
     if (!is_user_logged_in()) {
     	if (is_woocommerce() || is_cart() || is_checkout()) {
-	        // feel free to customize the following line to suit your needs
-	        wp_redirect(home_url());
-	        exit;
+	        echo "<script>
+	        	$('.storefront-sorting, .columns-3').toggle(false);
+	        	$('h1.woocommerce-products-header__title.page-title').html('La lista de productos solo están disponibles para nuestros clientes.<br><span style=\'font-size:22px;\'>Inicie sesión o pongase en contacto con nosotros para poder comprar.</span>');
+        	</script>";
 	    }
-	    echo "<style>.page_item.page-item-4 {display: none;}</style> ";
-    }
+    }	
 }
-add_action('template_redirect', 'wpse_131562_redirect');
+add_action('template_scripts', 'function_redirect');

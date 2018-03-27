@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<div class="central">
+<div class="central container">
 <script>
 	$(document).ready(function(){
 		$(".menu a").addClass("medium t11")

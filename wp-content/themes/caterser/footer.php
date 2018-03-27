@@ -63,7 +63,10 @@
 	</footer><!-- #colophon -->
 
 	<?php do_action( 'storefront_after_footer' ); ?>
+	<?php do_action( 'template_scripts' ); ?>
+	<?php
 
+	?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
