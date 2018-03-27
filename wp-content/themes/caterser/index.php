@@ -58,10 +58,10 @@
 	<div class="titulo1 regular t26" id="tituloHome2">
 		Productos Destacados
 	</div>
-	<div class="navButton">
+<!-- 	<div class="navButton">
 		<div class="destacadosPrev prev" style="cursor: pointer" onClick="moverSliderDestacados(event)"><img src="<?php echo get_stylesheet_directory_uri() ?>/imagenes/svg/next2.svg" alt=""></div>
 		<div class="destacadosNext next" style="cursor: pointer" onClick="moverSliderDestacados(event)"><img src="<?php echo get_stylesheet_directory_uri() ?>/imagenes/svg/prev2.svg" alt=""></div>
-	</div>
+	</div> -->
 	<div class="bordeSeparador"></div>
 	<div class="bordeSeparador"></div>
 	<div class="bordeSeparador"></div>
@@ -71,7 +71,7 @@
 	</div>
 	<script>
 			var destacadosSlides = [{margin: 0}];
-			incializarSliderDestacados();
+			//incializarSliderDestacados();
 			function incializarSliderDestacados() {
 				var totalItems = $("#productosDestacados > .woocommerce > .products > li").length;
 				var itemPorPantalla = 5;
@@ -193,6 +193,9 @@
 				new TweenMax.to($("#proveedores .proveedoresContainer"), 2, {marginLeft: proveedoresSlides[posicion].margin, ease: Power2.easeOut});
 				$("#proveedoresItemActual").data("to", posicion);
 			}
+			setInterval(function(){
+				$('.proveedoresNext img').click();
+			},5000);
 		</script>
 	</div>
 </section>

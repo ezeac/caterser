@@ -198,7 +198,7 @@ ul#site-header-cart {
     padding-right: 3%;
     min-width: 160px;
     z-index: 9;
-    margin-top: 8px;
+    margin-top: -15px;
 }
 
 .botonRojo {
@@ -208,7 +208,7 @@ ul#site-header-cart {
 }
 
 .itemRight.botonRojo {
-    margin-top: 5px;
+    margin-top: -10px !important;
     text-align: center;
     margin-right: 2%;
     position: relative;
@@ -248,10 +248,10 @@ ul#site-header-cart {
 
 .imagenLogo {
     float: left;
-    width: 160px;
-    margin-top: -15px;
+    width: 220px;
+    margin-top: -25px;
     margin-right: 5%;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     margin-left: 5%;
 }
 
@@ -286,7 +286,7 @@ span.itemHeader.glyphicon.glyphicon-shopping-cart {
 
 .contLogin {
     float: left;
-    margin-top: 15px;
+    margin-top: -15px;
     width: 100%;
 }
 
@@ -424,6 +424,14 @@ section#home2 {
     box-sizing: border-box;
     margin: 0px 5px;
     height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #productosDestacados .woocommerce .product {
+        width: calc(50% - 10px);
+    }
 }
 
 .contFooter1 div {
@@ -508,7 +516,7 @@ footer * {
 }
 
 #productosDestacados .woocommerce .product > a:first-child img {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .loginHome p.login-password::before {
@@ -523,6 +531,10 @@ input#woocommerce-product-search-field-0 {
     border-radius: 0px;
     padding-left: 40px;
     box-shadow: none !important;
+    color: white;
+}
+
+input#woocommerce-product-search-field-0::placeholder {
     color: white;
 }
 
@@ -629,10 +641,6 @@ nav#site-navigation {
 
 .next {
     right: 40px;
-}
-
-.itemProveedores {
-    height: 195px;
 }
 
 .tituloProveedores {
@@ -886,7 +894,7 @@ select.orderby {
 }
 
 ul.products li.product img {
-    height: 110px;
+    height: 120px;
     width: auto;
 }
 
@@ -937,6 +945,7 @@ div#modal {
     top: 50%;
     left: 15px;
     transform: translate(0,-50%);
+    color: white;
 }
 
 header > .col-full {
@@ -946,7 +955,6 @@ header > .col-full {
 
 .main-navigation ul.nav-menu>li:first-child {
     margin-left: 0px;
-    display: none;
 }
 
 .carousel-control {
@@ -1003,6 +1011,7 @@ ul.products li.product {
 .loginHome {
     width: 80%;
     position: relative;
+    margin-top: 25px;
 }
 
 form#loginform {
@@ -1037,7 +1046,7 @@ nav#site-navigation {
     text-align: right;
 }
 
-.main-navigation div.menu {width: 200px;position: absolute;right: 98px;}
+.main-navigation div.menu {width: 200px;position: absolute;right: 98px;top: 35px;}
 
 .menuPrincipal a {
     background: #3a3a3a;
@@ -1247,7 +1256,7 @@ div#content {
     }
 }
 
-button.menu-toggle {position: absolute;right: 20px;}
+button.menu-toggle {position: absolute;right: 4%;top: 35px;}
 
 .woocommerce-MyAccount-navigation ul li {
     float: left;
@@ -1293,14 +1302,10 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
     line-height: 10px;
 }
 
-.itemRight a > i {.itemRight
-    a > i {      position: absolute;
-    color: grey;
-    transform: translate(20%, 10%);
-    font-size: 18px;  }
+.itemRight a > i {
     position: absolute;
     color: grey;
-    transform: translate(20%, 25%);
+    transform: translate(30%, 10%);
     font-size: 18px;
 }
 
@@ -1413,4 +1418,30 @@ html[lang="es-ES"] {
 
 .woocommerce-account .loginHome {
     display: none;
+}
+
+.itemProveedores {
+    height: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:767px){
+#wp-live-chat-header {
+    margin-bottom:80px;
+}
+.itemProveedores {
+    height: 40vw;
+}
+}
+
+
+
+.proveedoresContainer {
+    display: flex;
+    align-items: center;
+}
+
+.proveedoresItem {
+    margin: 20px;
 }

@@ -188,3 +188,17 @@ function mostrarDatos ($resultados) {
 					else {$text .= "<br/>No hay más datos. <br/>";}
 					return $text;
 }
+
+
+
+function wpse_131562_redirect() {
+    if (!is_user_logged_in()) {
+    	if (is_woocommerce() || is_cart() || is_checkout()) {
+	        // feel free to customize the following line to suit your needs
+	        wp_redirect(home_url());
+	        exit;
+	    }
+	    echo "<style>.page_item.page-item-4 {display: none;}</style> ";
+    }
+}
+add_action('template_redirect', 'wpse_131562_redirect');
